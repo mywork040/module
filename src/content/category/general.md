@@ -1,6 +1,6 @@
 ---
 title: 'General'
-coverSVG: ../../assets/svg/undraw/undraw_instant_information.svg
-socialImage: ../../assets/undraw/undraw_instant_information.png
+coverSVG: ../../assets/svg/undraw/bg.webp
+socialImage: ../../assets/svg/undraw/bg.webp
 description: General Category
 ---

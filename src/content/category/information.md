@@ -1,6 +1,6 @@
 ---
 title: 'information'
-coverSVG: ../../assets/svg/undraw/undraw_instruction_manual.svg
-socialImage: ../../assets/undraw/undraw_instruction_manual.png
+coverSVG: ../../assets/svg/undraw/info1.jpg
+socialImage: ../../assets/svg/undraw/info1.jpg
 description: 'Information articles.'
 ---
