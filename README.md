@@ -240,3 +240,5 @@ All commands are run from the root of the project, from a terminal:
   - automatically generated sidebar links
   - improved RSS and search metadata
 "# new" 
+#   n e w  
+ 
