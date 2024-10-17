@@ -241,4 +241,5 @@ All commands are run from the root of the project, from a terminal:
   - improved RSS and search metadata
 "# new" 
 #   n e w  
+ #   n e w  
  
