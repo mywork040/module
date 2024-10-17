@@ -157,7 +157,7 @@ Navigating a new city can be daunting. Familiarize yourself with local transport
 <summary><strong>What should I do if I face unexpected expenses?</summary></strong>
   <p class="faq-answer" style="display: none;">Having an emergency fund can help you cover unexpected costs. Additionally, consider part-time job opportunities to supplement your income.</p>
 </details>
-</div>
+
 
 <style>
   .faq-container {
