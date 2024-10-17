@@ -18,6 +18,7 @@ import markdoc from "@astrojs/markdoc";
 export default defineConfig({
   vite: {
     ssr: {
+      output: 'server',
       external: ['svgo'],
       noExternal: ['swiper', 'leaflet']
     }

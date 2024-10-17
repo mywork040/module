@@ -1,4 +1,5 @@
-<!-- ---
+---
+// Imports...
 import type { PaginateFunction, Page } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 import { getEntry } from 'astro:content'
@@ -21,13 +22,17 @@ const { page } = Astro.props
 
 const detail = await getEntry('author', author!)
 
+if (!detail) {
+  throw new Error(`Author not found: ${author}`);
+}
+
 const frontmatter: CollectionEntry<'page'>['data'] = {
   title:
     'Author: ' +
-    detail!.data.title +
+    detail.data.title +
     (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
   description:
-    detail!.data.description +
+    detail.data.description +
     '. ' +
     'Showing articles ' +
     (page.start + 1) +
@@ -67,8 +72,8 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
       socialImage={frontmatter.socialImage}
     >
       <Image
-        src={detail!.data.image}
-        alt={detail!.data.title}
+        src={detail.data.image}
+        alt={detail.data.title}
         class='mt-4 h-32 w-32 rounded-full object-cover object-center'
       />
       <PaginateControl base={currentPage} page={page} />
@@ -77,4 +82,4 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
   <main class='mt-10 bg-gray-100 dark:bg-gray-900'>
     <BlogRoll posts={page.data} />
   </main>
-</Base> -->
+</Base>
