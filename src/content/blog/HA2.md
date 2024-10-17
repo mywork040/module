@@ -89,7 +89,6 @@ Australia’s living costs can fluctuate based on the city, with **Sydney** and 
 #### Current Trends:
 In **2024**, students are increasingly using **student discounts** and exploring **part-time jobs** to offset rising living costs. Look for supermarkets that offer student-friendly deals.
 
-### Cost of Living for International Students in 2024
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="/src/assets/svg/undraw/graph2.jpeg" alt="Description of the image" style="width: 700px; height: auto;" />
 </div>

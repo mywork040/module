@@ -6,8 +6,8 @@ import Base from '../../../layouts/base.astro'
 import PageHero from '../../../components/pagehero.astro'
 import BlogRoll from '../../../components/blogroll.astro'
 import PaginateControl from '../../../components/paginatecontrol.astro'
-import coverSVG from '../../../assets/svg/undraw/undraw_add_notes.svg'
-import socialImage from '../../../assets/undraw/undraw_add_notes.png'
+// import coverSVG from '../../../assets/svg/undraw/undraw_add_notes.svg'
+// import socialImage from '../../../assets/undraw/undraw_add_notes.png'
 
 export interface Props {
   page: Page<CollectionEntry<'blog'>>
@@ -23,8 +23,8 @@ const frontmatter: CollectionEntry<'page'>['data'] = {
     (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
   description:
     'Showing articles ' + (page.start + 1) + '-' + (page.end + 1) + ' (total ' + page.total + ')',
-  coverSVG: coverSVG,
-  socialImage: socialImage
+  //coverSVG: coverSVG,
+  //socialImage: socialImage
 }
 
 const currentPage = Astro.url.pathname.replace(/(\/\d*)?\/$/, '')
@@ -51,8 +51,7 @@ export async function getStaticPaths({ paginate }: { paginate: PaginateFunction 
     <PageHero
       title={frontmatter.title}
       description={frontmatter.description}
-      coverSVG={frontmatter.coverSVG}
-      socialImage={frontmatter.socialImage}
+   
     >
       <PaginateControl base={currentPage} page={page} />
     </PageHero>

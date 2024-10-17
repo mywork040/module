@@ -1,17 +1,15 @@
----
+<!-- ---
 import { getCollection } from 'astro:content'
 import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import Base from '../layouts/base.astro'
 import PageHero from '../components/pagehero.astro'
-import coverSVG from '../assets/svg/undraw/undraw_windows.svg'
-import socialImage from '../assets/undraw/undraw_windows.png'
+
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   title: 'Authors',
   description: 'Contributors to this website',
-  coverSVG: coverSVG,
-  socialImage: socialImage
+ 
 }
 
 const authors = await getCollection('author')
@@ -22,8 +20,7 @@ const authors = await getCollection('author')
     <PageHero
       title={frontmatter.title}
       description={frontmatter.description}
-      coverSVG={frontmatter.coverSVG}
-      socialImage={frontmatter.socialImage}
+      
     />
   </header>
   <main class='mt-8 bg-white dark:bg-gray-900'>
@@ -54,4 +51,4 @@ const authors = await getCollection('author')
       </div>
     </div>
   </main>
-</Base>
+</Base> -->
