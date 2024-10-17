@@ -18,13 +18,12 @@ import markdoc from "@astrojs/markdoc";
 export default defineConfig({
   vite: {
     ssr: {
-      output: 'server',
       external: ['svgo'],
       noExternal: ['swiper', 'leaflet']
     }
   },
   site: 'https://hellotham.github.io',
-  base: '/blog/',
+  base: '/hello-astro/',
   integrations: [icon(), tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
