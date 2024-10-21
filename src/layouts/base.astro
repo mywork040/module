@@ -18,21 +18,15 @@ const { frontmatter, schema = 'WebPage' } = Astro.props
 <html lang='en' itemscope itemtype={`https://schema.org/${schema}`}>
   <head>
     <meta charset='UTF-8' />
-    <!-- <meta
-      http-equiv='Content-Security-Policy'
-      content="default-src * 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
-    />
-    <meta http-equiv='Referrer-Policy' content='no-referrer, strict-origin-when-cross-origin' /> -->
-    <meta name='viewport' content='width=device-width' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' href={`${Astro.site}favicon.ico`} sizes='any' />
     <link rel='icon' href={`${Astro.site}favicon.svg`} type='image/svg+xml' />
     <link rel='apple-touch-icon' href={`${Astro.site}apple-touchicon.png`} />
     <link rel='manifest' href={`${Astro.site}site.webmanifest`} />
-    <link rel='sitemap' href={`${Astro.site}sitemap-indexxml`} />
+    <link rel='sitemap' href={`${Astro.site}sitemap-index.xml`} />
     <link rel='alternate' type='application/rss+xml' title={SiteMetadata.title} href={`${Astro.site}rss.xml`} />
     <meta name='generator' content={Astro.generator} />
     <SEO frontmatter={frontmatter} />
-    <!-- <ViewTransitions /> -->
     <script is:inline>
       const setDarkMode = () => {
         if (
@@ -44,8 +38,8 @@ const { frontmatter, schema = 'WebPage' } = Astro.props
           document.documentElement.classList.remove('dark')
         }
       }
-      setDarkMode() //initial navigation
-      document.addEventListener('astro:after-swap', setDarkMode) // Runs on view transitions navigation
+      setDarkMode(); // initial navigation
+      document.addEventListener('astro:after-swap', setDarkMode); // Runs on view transitions navigation
     </script>
     <style is:inline>
       [x-cloak] {
@@ -54,6 +48,40 @@ const { frontmatter, schema = 'WebPage' } = Astro.props
       .markmap > svg {
         width: 100%;
         height: 400px;
+      }
+      
+      /* Responsive styles */
+      body {
+        font-family: 'Arial', sans-serif; /* Use a responsive font */
+      }
+      h1, h2, h3 {
+        margin: 0; /* Ensure consistent margin */
+      }
+      /* Mobile styles */
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 1.5rem; /* Adjust heading size for mobile */
+        }
+        h2 {
+          font-size: 1.25rem; /* Adjust heading size for mobile */
+        }
+        h3 {
+          font-size: 1rem; /* Adjust heading size for mobile */
+        }
+        /* Add padding and margins */
+        .content {
+          padding: 1rem; /* Add padding for mobile */
+        }
+      }
+      
+      /* Tablet styles */
+      @media (min-width: 641px) and (max-width: 1024px) {
+        h1 {
+          font-size: 2rem; /* Slightly larger for tablets */
+        }
+        .content {
+          padding: 1.5rem; /* Add padding for tablets */
+        }
       }
     </style>
     {
@@ -70,9 +98,11 @@ const { frontmatter, schema = 'WebPage' } = Astro.props
   </head>
   <body class='dark:bg-gray-900'>
     <Header />
-    <slot />
-    {frontmatter.gallery && <Gallery folder={frontmatter.gallery} />}
-    <slot name='before-footer' />
+    <div class="content">
+      <slot />
+      {frontmatter.gallery && <Gallery folder={frontmatter.gallery} />}
+      <slot name='before-footer' />
+    </div>
     {/* <Footer /> */}
     {
       frontmatter.extra?.includes('markmap') && (

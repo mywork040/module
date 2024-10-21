@@ -1,9 +1,10 @@
 ---
-import VisaSVG from '../assets/svg/undraw/vs.jpg'
-import UniversitySVG from '../assets/svg/undraw/sel.svg'
-import ScholarshipsSVG from '../assets/svg/undraw/HA11.jpg'
+import VisaSVG from '../assets/svg/undraw/vs.jpg';
+import UniversitySVG from '../assets/svg/undraw/sel.svg';
+import ScholarshipsSVG from '../assets/svg/undraw/HA11.jpg';
 
-const basePath = '/hello-astro' // Set the base path here
+// Retrieve the base path from environment variables
+const basePath = import.meta.env.BASE_URL || '/';
 
 const callouts = [
   {
@@ -11,7 +12,7 @@ const callouts = [
     description: 'Get step-by-step help with your student visa application for a seamless process.',
     imageSrc: VisaSVG.src,
     imageAlt: 'Visa application illustration',
-    href: `${basePath}/visa-guidance` // Include base path
+    href: `${basePath}visa-guidance`
   },
   {
     name: 'University Selection',
@@ -19,16 +20,16 @@ const callouts = [
       'Explore top universities worldwide, with personalized recommendations based on your interests.',
     imageSrc: UniversitySVG.src,
     imageAlt: 'University selection illustration',
-    href: `${basePath}/university-selection` // Include base path
+    href: `${basePath}university-selection`
   },
   {
     name: 'Scholarships & Financial Aid',
     description: 'Learn how to apply for scholarships and financial aid to support your education.',
     imageSrc: ScholarshipsSVG.src,
     imageAlt: 'Scholarship application illustration',
-    href: `${basePath}/scholarships-financial-aid` // Include base path
+    href: `${basePath}scholarships-financial-aid`
   }
-]
+];
 ---
 
 <div class='dark:bg-black-900 bg-gray-100'>
