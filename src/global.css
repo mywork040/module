@@ -1,61 +1,37 @@
 /* Global styles */
 nav {
     transition: padding 0.3s ease; /* Smooth transition for padding change */
-}
-
-/* Add responsive styles */
-@media (max-width: 768px) {
+  }
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
     nav {
-        padding: 0 1rem; /* Add some padding for smaller screens */
+      padding: 0 1rem; /* Add some padding for smaller screens */
     }
-
+  
     .flex {
-        flex-direction: column; /* Stack items vertically on mobile */
+      flex-direction: column; /* Stack items vertically on mobile */
     }
-
+  
     .lg\:hidden {
-        display: none; /* Ensure hidden items do not show on mobile */
+      display: none; /* Ensure hidden items do not show on mobile */
     }
-
+  
     /* Mobile menu styles */
     .absolute {
-        position: absolute; /* Ensure proper positioning for mobile menu */
-        z-index: 50; /* Maintain stacking order */
+      position: absolute; /* Ensure proper positioning for mobile menu */
+      z-index: 50; /* Maintain stacking order */
     }
-
+  
     /* Adjust the mobile button for better touch targets */
     button {
-        padding: 0.5rem; /* Ensure there's enough touch area */
+      padding: 0.5rem; /* Ensure there's enough touch area */
     }
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     nav {
-        padding: 0 2rem; /* More padding for larger screens */
+      padding: 0 2rem; /* More padding for larger screens */
     }
-}
-
-#logo {
-    display: flex;             /* Use flex to align items horizontally */
-    align-items: center;      /* Center items vertically */
-    padding: 0.5rem;          /* Add padding for better touch targets */
-    margin-left: 0.5rem;      /* Add some margin to separate from other elements */
-}
-
-#logo img {
-    height: 48px;             /* Adjust logo size for better visibility */
-    width: 48px;              /* Maintain aspect ratio */
-}
-
-/* Styles for the Blog link */
-.blog-link {
-    margin-left: 0.5rem;      /* Space between the logo and the link */
-    font-size: 1.125rem;      /* Font size for the Blog link */
-    color: #4A5568;           /* Text color */
-    text-decoration: none;     /* Remove underline */
-    transition: color 0.2s;    /* Smooth transition for hover effect */
-}
-
-.blog-link:hover {
-    color: #2D3748;           /* Change color on hover */
-}
+  }
+  
