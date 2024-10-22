@@ -16,7 +16,6 @@ import ml from '/src/assets/svg/undraw/ml.png';
               <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
             </a>
           </div>
-          <!-- Added Blog link next to the logo -->
           <div class='ml-4'> <!-- Margin left for spacing -->
             {
               NavigationLinks.filter(item => item.name === "Blog").map((item) => (
@@ -86,6 +85,12 @@ import ml from '/src/assets/svg/undraw/ml.png';
       id='mobile-menu'
     >
       <div class='flex justify-center border-b-2 border-t-2 border-gray-600 bg-gray-100 px-4 py-2 font-semibold dark:border-gray-700 dark:bg-gray-900'>
+        {/* Logo added here in mobile view */}
+        <a href="https://futurx.in/" aria-label="FuturX Logo">
+          <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
+        </a>
+      </div>
+      <div class='flex flex-col items-center p-4'>
         {
           // Show only the Blog link in mobile menu
           NavigationLinks.filter(item => item.name === "Blog").map((item) => (
@@ -102,6 +107,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
             </a>
           ))
         }
+        {/* Removed Theme toggle from mobile menu */}
       </div>
     </div>
   </nav>
