@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { NavigationLinks } from '../config';
 import Search from '../components/search.astro';
-import Theme from '../components/theme.astro'; // Ensure this component accepts props
+import Theme from '../components/theme.astro';
 import ml from '/src/assets/svg/undraw/ml.png';
 ---
 
@@ -11,11 +11,14 @@ import ml from '/src/assets/svg/undraw/ml.png';
     <div class='fixed z-50 mx-auto w-full border-b-2 border-gray-700 bg-gray-100 px-2 dark:border-gray-600 dark:bg-gray-900 sm:px-6 lg:px-8'>
       <div class='relative flex h-16 items-center justify-between'>
         <div class='flex items-center'>
+          <!-- Logo Section -->
           <div class='flex flex-shrink-0 items-center'>
             <a href="https://futurx.in/" aria-label="FuturX Logo">
               <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
             </a>
           </div>
+          
+          <!-- Blog Link -->
           <div class='ml-4'>
             {
               NavigationLinks.filter(item => item.name === "Blog").map((item) => (
@@ -34,40 +37,39 @@ import ml from '/src/assets/svg/undraw/ml.png';
               ))
             }
           </div>
-          <div class='absolute inset-y-0 left-0 flex items-center lg:hidden ml-2'>
-            <button
-              type='button'
-              x-on:click='isOpen = !isOpen'
-              class='inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100 dark:focus:ring-gray-800'
-              aria-controls='mobile-menu'
-              :aria-expanded='isOpen'
-            >
-              <span class='sr-only'>Open main menu</span>
-              <Icon
-                x-bind:class="{'hidden': isOpen, 'block': !isOpen }"
-                class='block h-6 w-6'
-                aria-hidden='true'
-                name='heroicons:bars-3'
-              />
-              <Icon
-                x-bind:class="{'block': isOpen, 'hidden': !isOpen }"
-                class='hidden h-6 w-6'
-                aria-hidden='true'
-                name='heroicons:x-mark'
-              />
-            </button>
-          </div>
         </div>
-        <div class='hidden lg:mx-4 lg:block'>
-          <div class='flex space-x-2'></div>
-        </div>
-        <div class='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+
+        <!-- Right Side (Search and Theme) -->
+        <div class='flex space-x-4 items-center'>
           <Search />
-          <Theme showText={false} />  <!-- Pass prop to hide text -->
+          <Theme />
+          <!-- Mobile menu button -->
+          <button
+            type='button'
+            x-on:click='isOpen = !isOpen'
+            class='lg:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100 dark:focus:ring-gray-800'
+            aria-controls='mobile-menu'
+            :aria-expanded='isOpen'
+          >
+            <span class='sr-only'>Open main menu</span>
+            <Icon
+              x-bind:class="{'hidden': isOpen, 'block': !isOpen }"
+              class='block h-6 w-6'
+              aria-hidden='true'
+              name='heroicons:bars-3'
+            />
+            <Icon
+              x-bind:class="{'block': isOpen, 'hidden': !isOpen }"
+              class='hidden h-6 w-6'
+              aria-hidden='true'
+              name='heroicons:x-mark'
+            />
+          </button>
         </div>
       </div>
     </div>
 
+    <!-- Mobile menu, show/hide based on menu state -->
     <div
       x-show='isOpen'
       x-cloak
@@ -82,6 +84,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
     >
       <div class='flex justify-center border-b-2 border-t-2 border-gray-600 bg-gray-100 px-4 py-2 font-semibold dark:border-gray-700 dark:bg-gray-900'>
         {
+          // Show only the Blog link in mobile menu
           NavigationLinks.filter(item => item.name === "Blog").map((item) => (
             <a
               href={import.meta.env.BASE_URL + item.href}
@@ -96,9 +99,6 @@ import ml from '/src/assets/svg/undraw/ml.png';
             </a>
           ))
         }
-      </div>
-      <div class='flex justify-center p-4'>
-        <Theme showText={false} />  <!-- Ensure only icons are shown -->
       </div>
     </div>
   </nav>
