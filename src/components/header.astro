@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { NavigationLinks } from '../config';
 import Search from '../components/search.astro';
-import Theme from '../components/theme.astro';
+import Theme from '../components/theme.astro'; // Ensure this component accepts props
 import ml from '/src/assets/svg/undraw/ml.png';
 ---
 
@@ -16,8 +16,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
               <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
             </a>
           </div>
-          <!-- Added Blog link next to the logo -->
-          <div class='ml-4'> <!-- Margin left for spacing -->
+          <div class='ml-4'>
             {
               NavigationLinks.filter(item => item.name === "Blog").map((item) => (
                 <a
@@ -35,8 +34,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
               ))
             }
           </div>
-          <div class='absolute inset-y-0 left-0 flex items-center lg:hidden ml-2'> <!-- Added margin-left for spacing -->
-            <!-- Mobile menu button -->
+          <div class='absolute inset-y-0 left-0 flex items-center lg:hidden ml-2'>
             <button
               type='button'
               x-on:click='isOpen = !isOpen'
@@ -61,18 +59,15 @@ import ml from '/src/assets/svg/undraw/ml.png';
           </div>
         </div>
         <div class='hidden lg:mx-4 lg:block'>
-          <div class='flex space-x-2'>
-            {/* You can remove this if you want only the Blog link */}
-          </div>
+          <div class='flex space-x-2'></div>
         </div>
         <div class='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
           <Search />
-          <Theme />
+          <Theme showText={false} />  <!-- Pass prop to hide text -->
         </div>
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state -->
     <div
       x-show='isOpen'
       x-cloak
@@ -87,7 +82,6 @@ import ml from '/src/assets/svg/undraw/ml.png';
     >
       <div class='flex justify-center border-b-2 border-t-2 border-gray-600 bg-gray-100 px-4 py-2 font-semibold dark:border-gray-700 dark:bg-gray-900'>
         {
-          // Show only the Blog link in mobile menu
           NavigationLinks.filter(item => item.name === "Blog").map((item) => (
             <a
               href={import.meta.env.BASE_URL + item.href}
@@ -102,6 +96,9 @@ import ml from '/src/assets/svg/undraw/ml.png';
             </a>
           ))
         }
+      </div>
+      <div class='flex justify-center p-4'>
+        <Theme showText={false} />  <!-- Ensure only icons are shown -->
       </div>
     </div>
   </nav>
