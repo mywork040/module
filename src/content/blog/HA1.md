@@ -83,7 +83,7 @@ Navigating the financial landscape of studying abroad can be daunting, but with 
 
 ### Call to Action
 
-Are you ready to take the next step toward studying abroad? Explore our [visa guidance page](/hello-astro/blog/ha3) for essential information, or visit our [university selection tips](/hello-astro/blog/ha1) for expert advice. Need personalized support? [Contact us](/hello-astro/contact) today to discuss your options and start your journey toward international education!
+Are you ready to take the next step toward studying abroad? Explore our [visa guidance page](/blog/ha3) for essential information, or visit our [university selection tips](/blog/ha1) for expert advice. Need personalized support? [Contact us](/contact) today to discuss your options and start your journey toward international education!
 
 ### Tuition Fees Comparison Table for 2024
 

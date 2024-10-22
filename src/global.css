@@ -1,0 +1,21 @@
+/* Add responsive styles */
+@media (max-width: 768px) {
+    nav {
+      padding: 0 1rem; /* Add some padding for smaller screens */
+    }
+  
+    .flex {
+      flex-direction: column; /* Stack items vertically on mobile */
+    }
+  
+    .lg\:hidden {
+      display: none; /* Ensure hidden items do not show on mobile */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    nav {
+      padding: 0 2rem; /* More padding for larger screens */
+    }
+  }
+  
