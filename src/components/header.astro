@@ -16,7 +16,8 @@ import ml from '/src/assets/svg/undraw/ml.png';
               <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
             </a>
           </div>
-          <div class='ml-4'>
+          <!-- Added Blog link next to the logo -->
+          <div class='ml-4'> <!-- Margin left for spacing -->
             {
               NavigationLinks.filter(item => item.name === "Blog").map((item) => (
                 <a
@@ -34,11 +35,12 @@ import ml from '/src/assets/svg/undraw/ml.png';
               ))
             }
           </div>
-          <div class='absolute inset-y-0 left-0 flex items-center lg:hidden ml-2'>
+          <div class='absolute inset-y-0 left-0 flex items-center lg:hidden ml-2'> <!-- Added margin-left for spacing -->
+            <!-- Mobile menu button -->
             <button
               type='button'
               x-on:click='isOpen = !isOpen'
-              class='inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100'
+              class='inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100 dark:focus:ring-gray-800'
               aria-controls='mobile-menu'
               :aria-expanded='isOpen'
             >
@@ -84,11 +86,6 @@ import ml from '/src/assets/svg/undraw/ml.png';
       id='mobile-menu'
     >
       <div class='flex justify-center border-b-2 border-t-2 border-gray-600 bg-gray-100 px-4 py-2 font-semibold dark:border-gray-700 dark:bg-gray-900'>
-        <a href="https://futurx.in/" aria-label="FuturX Logo">
-          <img class='block h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
-        </a>
-      </div>
-      <div class='flex flex-col items-center p-4'>
         {
           // Show only the Blog link in mobile menu
           NavigationLinks.filter(item => item.name === "Blog").map((item) => (
@@ -105,6 +102,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
             </a>
           ))
         }
-        <div class='mt-4'>
-          <Theme /> <!-- Include the Theme toggle here -->
-   
+      </div>
+    </div>
+  </nav>
+</div>
