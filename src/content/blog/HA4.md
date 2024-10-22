@@ -32,9 +32,6 @@ Part-time jobs offer practical work experience that complements academic knowled
 
 Working in a part-time job allows you to build a professional network in a new country. You meet people from various backgrounds, including colleagues, customers, and supervisors, which can lead to future job opportunities or references. Networking is an essential part of career development, and early exposure can be beneficial.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/src/assets/svg/undraw/graph4.png" alt="Description of the image" style="width: 500px; height: auto;" />
-</div>
 
 ###  Cultural Immersion
 

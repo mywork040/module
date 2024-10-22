@@ -42,9 +42,6 @@ In Germany, international students earn around **€10 to €15** per hour for p
 
 Building a professional network is essential for international students. Engaging with peers, attending workshops, and participating in career fairs can open doors to job opportunities. Networking can lead to internships and full-time positions post-graduation. Many universities offer career services to help students connect with industry professionals. Developing these relationships enhances employability and potential salary negotiations.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/src/assets/svg/undraw/graph6.jpeg" alt="Description of the image" style="width: 700px; height: auto;" />
-</div>
 
 ### Remote Work Opportunities
 

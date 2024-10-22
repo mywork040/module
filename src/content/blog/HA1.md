@@ -49,9 +49,6 @@ Germany is renowned for its commitment to accessible education, making it a popu
 
 Scholarships and grants are invaluable resources for students looking to offset tuition costs. Numerous organizations, universities, and governments offer financial aid to international students based on merit or need. Students should actively search for scholarships relevant to their field of study and apply early to maximize their chances of securing funding. Websites such as Scholarships.com and Fastweb can be excellent resources for finding opportunities.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/src/assets/svg/undraw/gra.jpeg" alt="Description of the image" style="width: 700px; height: auto;" />
-</div>
 
 ### Understanding Education Loans
 

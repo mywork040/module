@@ -45,9 +45,6 @@ Securing a student visa is crucial for international students aiming to pursue h
 ### Visa Processing Time  
    Understanding the visa processing time is essential for planning your arrival. Processing times can vary widely depending on the country and the time of year. It is advisable to apply for your visa as early as possible, ideally several months before your intended start date. This helps to accommodate any delays that may arise during the process.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/src/assets/svg/undraw/graph3.jpeg" alt="Description of the image" style="width: 700px; height: auto;" />
-</div>
 
 ### Receiving Your Visa 
    Once your application is approved, you will receive your visa, which allows you to travel to your destination country. Review the visa carefully to ensure all details are correct. If you notice any discrepancies, contact the embassy immediately to rectify them. Having accurate information on your visa is crucial for a smooth entry.
