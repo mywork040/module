@@ -12,10 +12,13 @@ import { Icon } from 'astro-icon/components'
       aria-haspopup='true'
       x-on:click='themeOpen = !themeOpen'
     >
-      Light/Dark
+      <Icon class='h-5 w-5' name='heroicons:sun' aria-hidden='true' />
+      <span class='mx-1'>/</span>
+      <Icon class='h-5 w-5' name='heroicons:moon-solid' aria-hidden='true' />
       <Icon class='-mr-1 ml-2 h-5 w-5' aria-hidden='true' name='heroicons:chevron-down-20-solid' />
     </button>
   </div>
+  
   <ul
     x-show='themeOpen'
     x-cloak
