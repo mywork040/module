@@ -6,7 +6,7 @@ import ml from '/src/assets/svg/undraw/ml.png';
 ---
 
 <div class='relative h-auto w-full'>
-  <nav x-data='{ isOpen: false }' class='dark:bg-gray-900'>
+  <nav class='dark:bg-gray-900'>
     <div class='fixed z-50 mx-auto w-full border-b-2 border-gray-700 bg-gray-100 px-2 dark:border-gray-600 dark:bg-gray-900 sm:px-6 lg:px-8'>
       <div class='relative flex h-16 items-center justify-between'>
         <div class='flex items-center space-x-4'>
@@ -16,54 +16,28 @@ import ml from '/src/assets/svg/undraw/ml.png';
               <img class='h-12 w-12 dark:bg-gray-200' src={ml.src} alt='Logo' />
             </a>
           </div>
+          <!-- Added Blog link if necessary -->
+          {/* <div class='ml-4'>
+            <a
+              href={import.meta.env.BASE_URL + '/blog'}  <!-- Adjust the href accordingly -->
+              class='text-gray-600 hover:bg-gray-300 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100 rounded-md px-2 py-2 text-lg font-medium'
+            >
+              Blog
+            </a>
+          </div> */}
         </div>
 
         <!-- Right Side (Search and Theme) -->
         <div class='flex items-center space-x-4'>
           <Search />
           <Theme />
-          <!-- Mobile menu button -->
-          <button
-            type='button'
-            x-on:click='isOpen = !isOpen'
-            class='lg:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-200 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-100 dark:focus:ring-gray-800'
-            aria-controls='mobile-menu'
-            :aria-expanded='isOpen'
-          >
-            <span class='sr-only'>Open main menu</span>
-            <Icon
-              x-bind:class="{'hidden': isOpen, 'block': !isOpen }"
-              class='block h-6 w-6'
-              aria-hidden='true'
-              name='heroicons:bars-3'
-            />
-            <Icon
-              x-bind:class="{'block': isOpen, 'hidden': !isOpen }"
-              class='hidden h-6 w-6'
-              aria-hidden='true'
-              name='heroicons:x-mark'
-            />
-          </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state -->
-    <div
-      x-show='isOpen'
-      x-cloak
-      x-transition:enter='transition ease-out duration-100 transform'
-      x-transition:enter-start='opacity-0 scale-95'
-      x-transition:enter-end='opacity-100 scale-100'
-      x-transition:leave='transition ease-in duration-75 transform'
-      x-transition:leave-start='opacity-100 scale-100'
-      x-transition:leave-end='opacity-0 scale-95'
-      class='absolute inset-x-0 top-16 z-50'
-      id='mobile-menu'
-    >
-      <div class='flex justify-center border-b-2 border-t-2 border-gray-600 bg-gray-100 px-4 py-2 font-semibold dark:border-gray-700 dark:bg-gray-900'>
-        <!-- Empty mobile menu -->
-      </div>
+    <!-- Mobile menu (removed) -->
+    <div class='hidden' id='mobile-menu'>
+      <!-- Empty mobile menu -->
     </div>
   </nav>
 </div>
