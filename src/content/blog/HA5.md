@@ -99,10 +99,6 @@ The **EU Blue Card** offers non-EU graduates a pathway to work in Germany. This 
 
 Top employers in Germany include **Siemens**, **BMW**, and **SAP**. These companies are known for their commitment to innovation and employee development. Graduates can find diverse roles in these organizations, from engineering to IT. Understanding the corporate culture and values of these companies can enhance the job search experience. Networking through university alumni can also provide valuable connections.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/src/assets/svg/undraw/graph5.jpeg" alt="Description of the image" style="width: 700px; height: auto;" />
-</div>
-
 ### Conclusion
 
 Navigating full-time job opportunities after graduation requires an understanding of the job market, visa options, and industry trends in various countries. Each nation offers unique opportunities that international graduates can capitalize on to build successful careers. By focusing on high-demand sectors, leveraging work visa options, and connecting with top employers, graduates can enhance their chances of securing fulfilling employment. Continuous learning and networking are essential components of a successful job search. 

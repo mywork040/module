@@ -20,7 +20,7 @@ Studying abroad is an enriching experience that offers students the chance to le
 
 ### United States
 
-In the United States, international students typically earn between **$15 to $20** per hour for part-time jobs, with on-campus positions generally paying around Off campus opportunities, particularly in high-demand fields like technology and engineering, can yield hourly wages of **$35** or more. As many students seek flexible work options, the gig economy provides additional earning avenues through rideshare driving and freelance tasks. Overall, these employment opportunities not only help students support themselves financially but also allow them to gain valuable work experience while studying.
+In the United States, international students typically earn between **\$15 to \$20** per hour for part-time jobs, with on-campus positions generally paying around Off campus opportunities, particularly in high-demand fields like technology and engineering, can yield hourly wages of **\$35** or more. As many students seek flexible work options, the gig economy provides additional earning avenues through rideshare driving and freelance tasks. Overall, these employment opportunities not only help students support themselves financially but also allow them to gain valuable work experience while studying.
 
 ### Canada
 

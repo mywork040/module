@@ -7,7 +7,7 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Hello Astro',
+  title: 'FuturX',
   description: 'An Astro starter for corporate/marketing/blog websites.',
   author: {
     name: 'Chris Tham',
@@ -17,7 +17,7 @@ export const SiteMetadata = {
     summary: 'Outrageous actualiser.'
   },
   org: {
-    name: 'Hello Tham',
+    name: 'GravityAI',
     twitter: '@hellothamcom',
     url: 'https://hellotham.com',
     email: 'info@hellotham.com',

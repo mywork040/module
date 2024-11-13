@@ -1,10 +1,10 @@
 ---
 title: Markdown Cheat Sheet
 description: A quick reference to the Markdown syntax.
-author: matt-cone
 pubDate: 2022-08-10T00:00:00.000Z
-coverSVG: ../../assets/svg/undraw/undraw_design_components.svg
-socialImage: ../../assets/undraw/undraw_design_components.png
+coverSVG: ../../assets/svg/undraw/tf.avif
+altText: "Infographic of tuition fees for studying abroad in popular countries"
+socialImage: ../../assets/svg/undraw/tf.avif
 categories:
   - information
 tags:

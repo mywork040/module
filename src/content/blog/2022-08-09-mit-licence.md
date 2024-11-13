@@ -1,10 +1,10 @@
 ---
 title: MIT Licence
 description: The MIT License, explained.
-author: chris-tham
 pubDate: 2022-08-09T00:00:00.000Z
-coverSVG: ../../assets/svg/undraw/undraw_open_source.svg
-socialImage: ../../assets/undraw/undraw_open_source.png
+coverSVG: ../../assets/svg/undraw/tf.avif
+altText: "Infographic of tuition fees for studying abroad in popular countries"
+socialImage: ../../assets/svg/undraw/tf.avif
 categories:
   - information
 tags:
