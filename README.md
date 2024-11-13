@@ -247,4 +247,5 @@ All commands are run from the root of the project, from a terminal:
  #   d e s k  
  #   a r t i c l e  
  #   v a r i a b l e  
+ #   m o d u l e  
  
